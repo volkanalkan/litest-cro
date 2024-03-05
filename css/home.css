@@ -558,10 +558,6 @@
     width: 65%;
     font-size: 16px;
   }
-
-  .user-text p {
-    width: 65%;
-  }
 }
 
 @media (min-height: 1030px) {

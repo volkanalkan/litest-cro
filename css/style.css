@@ -441,6 +441,10 @@ hr {
   ul li:hover ul.dropdown li:hover a:hover {
     color: var(--text-color);
   }
+
+  #nav-about {
+    display: none;
+  }
 }
 
 @media (max-width: 820px) {
