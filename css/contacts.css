@@ -96,3 +96,36 @@ form button {
   width: 150px;
   border-radius: 30px;
 }
+
+/* media queries */
+
+@media (max-width: 1200px) {
+  form {
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .contact-row {
+    flex-direction: column;
+  }
+
+  .contact-map {
+    margin-top: 35px;
+  }
+
+  .contact-map iframe {
+    border-right: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 35px;
+    border-bottom: 2px solid var(--text-color);
+  }
+}
+
+@media (max-width: 620px) {
+  .contact-row {
+    width: 60%;
+  }
+}
+
+@media (max-width: 500px) {
+}
