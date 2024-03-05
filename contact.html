@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Litest CRO</title>
+    <link rel="icon" href="./img/litestlogo.png" />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css files -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/contacts.css" />
+  </head>
+  <body>
+    <!-- scroll design -->
+    <div id="progressbar"></div>
+    <div id="scroll-path"></div>
+    <!-- header design -->
+    <header>
+      <a href="#" class="logo">Litest <span>CRO</span></a>
+
+      <ul class="navlist">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./index.html">About Us</a></li>
+        <li>
+          <a href="#" class="active">Services ⇓</a>
+          <ul class="dropdown">
+            <li>
+              <a href="./service-first.html"
+                >CLINICAL OPERATIONS & FEASIBILITY</a
+              >
+            </li>
+            <li>
+              <a href="./service-scnd.html">REGULATORY SERVICES</a>
+            </li>
+            <li>
+              <a href="./service.thrd.html">SITE COORDINATION & TRAINING</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="./connections.html">Connections</a></li>
+        <li><a href="./quality.html">Quality</a></li>
+        <li><a href="#" class="active">Contact</a></li>
+        <li><a href="./career.html" class="nav-career">Career</a></li>
+      </ul>
+      <div class="nav-lang">
+        <a href="#" class="lang-one act" lang="English">EN</a>
+        <a href="./tr/iletisim.html" class="lang-two" lang="Turkish">TR</a>
+      </div>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!-- contact design -->
+
+    <div class="contact-container">
+      <div class="contact-row">
+        <form onsubmit="sendEmail(); reset(); return false;">
+          <h3>
+            GET IN <span>TOUCH</span>
+            <div class="contact-underline"><span></span></div>
+          </h3>
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input
+            type="text"
+            id="surname"
+            placeholder="Your Last Name"
+            required
+          />
+          <input type="email" id="email" placeholder="Email" required />
+          <textarea
+            rows="4"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Your Message..."
+          ></textarea>
+          <div class="button-row">
+            <button type="send">Send</button>
+            <img src="./img/litestlogo.png" />
+          </div>
+        </form>
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.409939377059!2d28.78606357653047!3d41.06003107134334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa5c0a44e09ed%3A0x9fb1e55edfe0f0dd!2sErsa%20Grup%20Quality%20Residence!5e0!3m2!1str!2str!4v1709295459416!5m2!1str!2str"
+            width="500"
+            height="100%"
+            style="
+              border-right: 4px solid var(--text-color);
+              border-left: 0;
+              border-top: 0;
+              border-top-right-radius: 35px;
+              border-bottom-right-radius: 35px;
+            "
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer design -->
+
+    <footer>
+      <div class="ft-row">
+        <div class="ft-col">
+          <img src="./img/ft-logo.png" class="ft-logo" />
+          <p>
+            <a href="#" class="logo">Litest <span>CRO</span></a>
+          </p>
+        </div>
+
+        <div class="ft-col">
+          <h3>
+            Office
+            <div class="underline"><span></span></div>
+          </h3>
+          <p>
+            Çobançeşme Mah. Sanayi Cd. <br />Nish Residence B Blok No: 44 <br />
+            İç Kapı No: 9 <br />Bahçelievler/ISTANBUL
+          </p>
+          <p class="email-id">info@litest.com.tr</p>
+          <h4>+90 850 888 8404</h4>
+        </div>
+
+        <div class="ft-col">
+          <h3>
+            Links
+            <div class="underline"><span></span></div>
+          </h3>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./service-first.html">Services</a></li>
+            <li><a href="./connections.html">Connections</a></li>
+            <li><a href="./quality.html">Quality</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="./career.html">Career</a></li>
+          </ul>
+        </div>
+
+        <div class="ft-col">
+          <h3>
+            Location
+            <div class="underline"><span></span></div>
+          </h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.3553522690263!2d28.824357799999998!3d40.9955948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa3633156d9ff%3A0xba2c500c14e9ed06!2sNish%20%C4%B0stanbul!5e0!3m2!1str!2str!4v1709610833571!5m2!1str!2str"
+            width="300"
+            height="180"
+            style="border: 3px solid #e1e1e1; border-radius: 5px 5px 125px 5px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <hr />
+      <p class="copyright">Litest CRO © 2024 - All Rights Reserved</p>
+    </footer>
+
+    <!-- custom js link -->
+    <script src="./js/script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./js/contact.js"></script>
+  </body>
+</html>
