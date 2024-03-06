@@ -1,0 +1,109 @@
+:root {
+  --bg-color: #e1e1e1;
+  --second-white: #f4f4f4;
+  --text-color: #333134;
+  --main-color: #0a7b81;
+}
+
+/* career */
+
+.career-header h1 {
+  font-size: 40px;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 50px;
+}
+
+.career-header h1 span {
+  color: var(--main-color);
+}
+
+.career-underline {
+  width: 8%;
+  height: 3px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  left: 46%;
+  overflow: hidden;
+}
+
+.career-underline span {
+  width: 15px;
+  height: 100%;
+  background: var(--bg-color);
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 5s linear infinite;
+}
+
+.career-col {
+  margin-bottom: 25px;
+}
+
+.career-col .col-header {
+  margin-bottom: 10px;
+}
+
+.career-col.col-1 .col-header h3 {
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.career-col.col-2 .col-header h3,
+.career-col.col-3 .col-header h3 {
+  font-weight: 600;
+}
+
+.col-text p {
+  line-height: 1.5;
+}
+
+.career-button {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.career-button p span {
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+  color: var(--main-color);
+}
+
+.career-button button {
+  padding: 15px;
+  background: var(--main-color);
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  border-radius: 30px;
+}
+
+.career-button button:hover {
+  color: #fff;
+  transform: scale(1.1);
+  transition: all 0.45s ease;
+}
+
+.career-button button a {
+  color: var(--second-white);
+}
+
+/* media queries */
+
+@media (max-width: 900px) {
+  .career-button {
+    justify-content: center;
+  }
+
+  .career-button p {
+    margin-bottom: 25px;
+  }
+}

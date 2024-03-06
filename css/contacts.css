@@ -50,6 +50,12 @@ form h3 span {
   margin-top: 15px;
 }
 
+.button-row button:hover {
+  color: #fff;
+  transform: scale(1.1);
+  transition: all 0.45s ease;
+}
+
 .button-row img {
   height: 50px;
 }

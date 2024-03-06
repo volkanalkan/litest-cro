@@ -98,7 +98,9 @@
 }
 
 .btn:hover {
-  color: var(--second-white);
+  color: #fff;
+  transform: scale(1.1);
+  transition: all 0.45s ease;
 }
 
 /* testimonials */
