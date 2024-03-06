@@ -106,6 +106,10 @@ form button {
 /* media queries */
 
 @media (max-width: 1200px) {
+  .contact-container {
+    margin: 165px 0;
+  }
+
   form {
     margin-right: auto;
     width: 100%;
@@ -134,4 +138,13 @@ form button {
 }
 
 @media (max-width: 500px) {
+  form button {
+    width: 90px;
+    padding: 5px;
+    font-size: 15px;
+  }
+
+  .button-row img {
+    height: 35px;
+  }
 }
