@@ -1,6 +1,6 @@
 :root {
-  --bg-color: #e1e1e1;
-  --second-white: #f4f4f4;
+  --bg-color: #ccc;
+  --second-white: #fff;
   --text-color: #333134;
   --main-color: #0a7b81;
   --big-font: 5rem;
@@ -104,7 +104,7 @@
 /* testimonials */
 
 .testimonials {
-  background: var(--bg-color);
+  background: linear-gradient(var(--bg-color), var(--second-white));
   height: 90vh;
   width: 100%;
   position: relative;
@@ -262,7 +262,6 @@
   height: 160px !important;
   flex-basis: 15%;
   align-items: center;
-  cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -299,6 +298,7 @@
 
 .about {
   padding: 50px 15% 80px !important;
+  background: linear-gradient(to top, transparent, var(--second-white));
 }
 
 .about-header h1 {
@@ -342,12 +342,17 @@
   width: 55%;
 }
 
+.about-col.col-left p {
+  font-weight: 500;
+}
+
 .about-col.col-right {
   margin-left: auto;
 }
 
 .about-col.col-right img {
-  height: 350px;
+  transform: rotate(320deg);
+  -webkit-mask-image: linear-gradient(to top, #ff0000, #ff000028);
 }
 
 /* media queries */
@@ -360,10 +365,6 @@
   .ly-col p {
     font-size: 13px;
   }
-
-  /* .ly-col {
-    flex-basis: calc(30% - 40px);
-  } */
 }
 
 @media (max-width: 1050px) {
@@ -376,10 +377,9 @@
   }
 
   .about-col.col-right {
-    position: absolute;
-    opacity: 0.15;
-    width: 70%;
+    opacity: 0.55;
     text-align: center;
+    position: absolute;
   }
 
   .about {
@@ -544,6 +544,14 @@
 
   .home .ft-logo {
     width: 40px;
+  }
+
+  .about-col.col-right {
+    transform: translateX(-90px);
+  }
+
+  .about-col.col-left p {
+    font-weight: 600;
   }
 }
 
