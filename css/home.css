@@ -559,6 +559,12 @@
 
 @media (min-height: 700px) {
   .testimonials {
+    height: 110vh;
+  }
+}
+
+@media (min-height: 850px) {
+  .testimonials {
     height: 70vh;
   }
 }

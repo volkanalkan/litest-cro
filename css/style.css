@@ -259,6 +259,10 @@ footer .logo {
   margin: 20px 0;
 }
 
+.email-id a {
+  color: var(--bg-color);
+}
+
 footer ul li {
   margin-bottom: 12px;
 }
